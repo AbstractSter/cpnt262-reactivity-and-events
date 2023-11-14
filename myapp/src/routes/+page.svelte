@@ -8,7 +8,7 @@
   ];
 
 function addObject() {
-    const trimmedInput = inputArray.trim();
+    trimmedInput = inputArray.trim();
 }
 
 function handleInput(event) {
@@ -17,13 +17,17 @@ function handleInput(event) {
 
     // Check if the input value is not empty before adding to the array
     if (trimmedInput !== "") {
-      const newObject = { id: arrayOfObjects.length + 1, name: inputValue };
+      const newObject = { id: arrayOfObjects.length + 1, name: trimmedInput };
 
       // Use push method to add the new object to the array
       arrayOfObjects.push(newObject);
 
       // Clear the input after adding to the array
       inputArray = "";
+    }
+
+    function handleInput(event) {
+      inputArray = event.target.value;
     }
   </script>
 
