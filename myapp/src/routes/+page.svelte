@@ -1,6 +1,6 @@
 <script>
   let inputArray = "";
-  let inputValue = "";
+  let trimmedInput = "";
   let arrayOfObjects = [
     {color: "red", type: "minivan", doorcount: "5", year: "2010"},
     {color: "green", type: "sedan", doorcount: "4", year: "2009"},
@@ -8,7 +8,7 @@
   ];
 
 function addObject() {
-    const inputValue = inputArray.trim();
+    const trimmedInput = inputArray.trim();
 }
 
 function handleInput(event) {
@@ -16,7 +16,7 @@ function handleInput(event) {
 }
 
     // Check if the input value is not empty before adding to the array
-    if (inputValue !== "") {
+    if (trimmedInput !== "") {
       const newObject = { id: arrayOfObjects.length + 1, name: inputValue };
 
       // Use push method to add the new object to the array
