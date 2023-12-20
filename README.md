@@ -3,6 +3,7 @@
 ## Author: Sterling Smith
 
 ### [Deployed Site](https://hilarious-macaron-540ea4.netlify.app)
+- Page taken down from Netlify for being inactive for 7 days
 
 ### Search/Research Notes
 - Taking the time to research the syntax that is needed for the task at hand. Then using that syntax to further narrow your search.
